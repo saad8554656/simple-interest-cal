@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url('https://media.istockphoto.com/id/1414921475/photo/couple-calculating-bills-at-home-using-tablet-and-calculator-young-couple-working-on-computer.jpg?s=612x612&w=0&k=20&c=DBYlW3NboCFHNUf7WwvstaG_SvZyGqT-S6QVxmT1j_0='); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #0000001a;
+    width: 80%; /* Adjust width to make it more responsive */
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-section {
+    padding-right: 30px;
+}
+
+input[type="number"] {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black !important;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: gray !important;
+}
+
+#result {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.results {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Pie Chart Styling */
+#chart-container {
+    width: 400px;
+    height: 400px; 
+    padding: 10px;
+    
+}
+
+#chart-container:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .results {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #chart-container {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+}
